@@ -1,9 +1,11 @@
 import { View, Text, StyleSheet, Image } from "react-native";
+import { StatusBar } from "expo-status-bar";
 import React from "react";
 
 export default function Index() {
   return (
     <View style={styles.container}>
+      <StatusBar style="auto" />
       <Image
         source={require("../assets/img/icon.png")}
         style={styles.imgHeader}
@@ -42,5 +44,7 @@ const styles = StyleSheet.create({
 
   txtH6: {
     fontSize: 15,
+    textAlign: "justify",
+    margin: 20,
   },
 });
